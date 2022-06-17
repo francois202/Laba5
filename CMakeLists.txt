@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.10.2)
+project(Clion++)
+set(CMAKE_CXX_STANDARD 14)
+file(GLOB SOURCES "*.h" "*.cpp" "matrixTypes/*.cpp" "matrixTypes/*.h" "exceptions/*.h" "exceptions/*.cpp")
+add_executable(Clion++ ${SOURCES})
+add_library(Matrix_ SHARED ${SOURCES})
